@@ -30,10 +30,10 @@ const AddNewData = () => {
             for (let i = 0; i < data.images.length; i++) {
                 formData.append('images', data.images[i]);
             }
-            // createProject(formData, {
-            //     onSuccess: () => reset()
-            // });
-            toast.success("Project Added!",)
+            createProject(formData, {
+                onSuccess: () => reset()
+            });
+            toast.success("Project Added!",) 
         }, (err) => {
             toast.error("please enter valid data",)
         }
