@@ -24,6 +24,7 @@ const AddNewData = () => {
         <form className="form_data" onSubmit={handleSubmit((data) => {
             const formData = new FormData();
             formData.append('title', data.title);
+            formData.append('link', data.link);
             formData.append('technologies', data.technologies);
             console.log(data.projectType);
 
