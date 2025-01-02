@@ -87,7 +87,7 @@ const AddNewData = () => {
             })}>
                 <option value="">Select</option>
                 <option value="front_end">Front End</option>
-                <option value="backend_end">Backend </option>
+                <option value="back_end">Backend </option>
             </select>
             {errors.projectType && <ErrorValidate msg={errors.projectType.message} />}
             <ButtonSubmition value={isCreating && "adding..."} />
